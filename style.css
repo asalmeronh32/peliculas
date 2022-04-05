@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.derecha{
+	background-image: url(lugia.jpg);
+	width: 49%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.izquierda{
+ background-image: url(items.png);
+ width: 49%;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+ float: right;
+ text-align: center;
+ position: relative;
+}
+
+@media (max-width: 600px){
+	.contenedor {
+		width: 90%;
+		max-width: 1000px;
+		margin: 40px auto 100px auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 40px;
+	}
+}
+
+@media screen and (min-width:600px) and (max-width: 960px){
+	.contenedor {
+		width: 90%;
+		max-width: 1000px;
+		margin: 40px auto 100px auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+}
